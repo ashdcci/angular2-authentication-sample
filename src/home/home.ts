@@ -17,10 +17,34 @@ export class Home {
   response: string;
   api: string;
 
+    public data;
+    public filterQuery = '';
+    public rowsOnPage = 10;
+    public sortBy = 'email';
+    public sortOrder = 'asc';
+
   constructor(public router: Router, public http: Http, public authHttp: AuthHttp) {
     this.jwt = localStorage.getItem('id_token');
-    this.decodedJwt = this.jwt && window.jwt_decode(this.jwt);
+    // this.decodedJwt = this.jwt && window.jwt_decode(this.jwt);
   }
+
+
+  ngOnInit(): void {
+        this.http.get('src/common/data.json')
+            .subscribe((data)=> {
+                setTimeout(()=> {
+                    this.data = data.json();
+                }, 1000);
+            });
+    }
+
+    public toInt(num: string) {
+        return +num;
+    }
+
+    public sortByWordLength = (a: any) => {
+        return a.city.length;
+    }
 
   logout() {
     localStorage.removeItem('id_token');
