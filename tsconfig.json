@@ -20,8 +20,11 @@
     "./src/index.ts",
     "./src/login/index.ts",
     "./src/login/login.ts",
+    "./src/services/common.ts",
     "./src/signup/index.ts",
-    "./src/signup/signup.ts"
+    "./src/signup/signup.ts",
+    "./src/upload/index.ts",
+    "./src/upload/upload.component.ts"
   ],
   "filesGlob": [
     "./src/**/*.ts",

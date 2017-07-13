@@ -13,6 +13,7 @@ import { NonAuthGuard } from './common/nonauth.guard';
 import { Home } from './home';
 import { Login } from './login';
 import { Signup } from './signup';
+import {Upload} from './upload';
 import { App } from './app';
 import { DataFilterPipe }   from './common/data-filter.pipe';
 
@@ -21,7 +22,7 @@ import { routes } from './app.routes';
 @NgModule({
   bootstrap: [App],
   declarations: [
-    Home, Login, Signup, App, DataFilterPipe
+    Home, Login, Signup, App, DataFilterPipe,Upload
   ],
   imports: [
     HttpModule, BrowserModule, FormsModule,DataTableModule,

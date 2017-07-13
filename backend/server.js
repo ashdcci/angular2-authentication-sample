@@ -3,8 +3,8 @@ var logger          = require('morgan'),
     http            = require('http'),
     express         = require('express'),
     errorhandler    = require('errorhandler'),
-    dotenv          = require('dotenv'),
-    bodyParser      = require('body-parser');
+    fs              = require('fs'),
+    dotenv          = require('dotenv');
 
 var app = express();
 
@@ -14,8 +14,9 @@ dotenv.load();
 // old version of line
 // app.use(bodyParser.urlencoded());
 // new version of line
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(cors());
 
 app.use(function(err, req, res, next) {
@@ -40,4 +41,3 @@ var port = process.env.PORT || 3001;
 http.createServer(app).listen(port, function (err) {
   console.log('listening in http://localhost:' + port);
 });
-
