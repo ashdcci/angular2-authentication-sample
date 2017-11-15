@@ -14,6 +14,7 @@ import { Home } from './home';
 import { Login } from './login';
 import { Signup } from './signup';
 import {Upload} from './upload';
+import {Dashboard} from './dashboard';
 import { App } from './app';
 import { DataFilterPipe }   from './common/data-filter.pipe';
 
@@ -22,7 +23,7 @@ import { routes } from './app.routes';
 @NgModule({
   bootstrap: [App],
   declarations: [
-    Home, Login, Signup, App, DataFilterPipe,Upload
+    Home, Login, Signup, App, DataFilterPipe,Upload,Dashboard
   ],
   imports: [
     HttpModule, BrowserModule, FormsModule,DataTableModule,

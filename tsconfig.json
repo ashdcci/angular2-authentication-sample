@@ -15,6 +15,8 @@
     "./src/common/data-filter.pipe.ts",
     "./src/common/headers.ts",
     "./src/common/nonauth.guard.ts",
+    "./src/dashboard/dashboard.ts",
+    "./src/dashboard/index.ts",
     "./src/home/home.ts",
     "./src/home/index.ts",
     "./src/index.ts",
