@@ -35,7 +35,7 @@
     "@angular/router": "3.0.1",
     "angular2-datatable": "^0.6.0",
     "angular2-jwt": "0.1.23",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "connect-multiparty": "^2.0.0",
     "core-js": "^2.4.1",
     "jwt-decode": "^2.0.1",
