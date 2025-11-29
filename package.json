@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/auth0/angular2-authentication-sample",
   "dependencies": {
-    "@angular/common": "2.0.1",
+    "@angular/common": "19.2.16",
     "@angular/compiler": "2.0.1",
     "@angular/core": "2.0.1",
     "@angular/forms": "2.0.1",
